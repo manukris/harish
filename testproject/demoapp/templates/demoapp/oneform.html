@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form for filling one</title>
+</head>
+<body>
+
+
+<form method="post">
+
+{% csrf_token %}
+    {{ oneform }}
+
+    <input type="submit" value="submit">
+
+
+</form>
+
+
+
+</body>
+</html>
