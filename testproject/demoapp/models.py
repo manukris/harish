@@ -6,7 +6,7 @@ class One(models.Model):
     name = models.CharField(max_length=30)
     age = models.IntegerField()
     dob = models.DateField()
-    image = models.ImageField(upload_to="img/")
+#    image = models.ImageField(upload_to="img/")
 
     def __str__(self):
         return self.name

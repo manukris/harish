@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From the LIST VIEW</title>
+</head>
+<body>
+<h1>The ONe model database data </h1>
+<ul>
+{% for item in object_list %}
+    <li>{{ item.name }} - {{ item.age }} - {{ item.dob }} </li>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
+</body>
+</html>
